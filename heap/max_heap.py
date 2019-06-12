@@ -1,11 +1,11 @@
 class Heap:
-    def __init__(self):
-        self.storage = []
-
     LEFT_NODE = 0
     RIGHT_NODE = 1
     UPDATE_UPWARDS = 0
     UPDATE_DOWNWARDS = 1
+
+    def __init__(self):
+        self.storage = []
 
     def node_left_or_right(self, original_idx):
         if (original_idx - 1) % 2 == 0:  # Left node
